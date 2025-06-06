@@ -43,6 +43,6 @@ jobs:
           cd ../
           flake8 . --statistics --max-complexity=10 --exit-zero
 
-      - name: Pytest
+      - name: Django-Test
         run: |
-          pytest -v --cov=. --cov-report=json
+          python manage.py test
