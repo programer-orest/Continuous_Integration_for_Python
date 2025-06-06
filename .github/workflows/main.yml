@@ -49,4 +49,4 @@ jobs:
 
       - name: Coverage
         run: |
-          pytest -v --cov-report=term-missing —-cov=.
+          pytest -v --cov-report=term-missing --cov=.
