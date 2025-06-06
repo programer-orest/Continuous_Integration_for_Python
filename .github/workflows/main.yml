@@ -43,10 +43,7 @@ jobs:
           cd ../
           flake8 . --statistics --max-complexity=10 --exit-zero
 
-      - name: Django-Test
+      - name: Django-Test and Test
         run: |
-          python manage.py test
-
-      - name: Coverage
-        run: |
-          pytest -v --ds=todolist.settings --cov-report=term-missing --cov=.
+          coverage run --source="." manage.py test
+          coverage report -m
