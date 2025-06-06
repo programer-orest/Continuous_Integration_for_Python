@@ -46,3 +46,7 @@ jobs:
       - name: Django-Test
         run: |
           python manage.py test
+
+      - name: Coverage
+        run: |
+          pytest -v --cov-report=term-missing —-cov=.
