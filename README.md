@@ -33,9 +33,9 @@ It is triggered on pushes and pull requests to the main and develop branches.
 
 3. Set up triggers for workflow execution:
 
-    Push to main and develop branches.
+    - Push to main and develop branches.
     
-    Pull request to main.
+    - Pull request to main.
 
 4. Customized the workflow run name to include:
 
