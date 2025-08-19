@@ -52,4 +52,4 @@ jobs:
         run: actions/upload-artifact@v3
         with:
           name: python-package
-          path: .
+          path: src/**/*.py
